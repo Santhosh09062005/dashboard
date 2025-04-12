@@ -5,16 +5,15 @@ function App() {
   const [text, setText] = useState("");
 
   function handleClick() {
-    alert("Submitted: " + text);
+    alert("Request Submitted: " + text);
     setText("");
   }
 
   return (
     <div className="container">
-      <div className="sidebar">
-        <img src="/images/logo.png" alt="College Logo" className="logo" />
-        <h2>QR Dashboard</h2>
-        <ul>
+      <div className="navbar">
+        <img src="/images/logo.png" className="logo" alt="Logo" />
+        <ul className="nav-links">
           <li>Dashboard</li>
           <li>Requests</li>
           <li>Profile</li>
@@ -22,14 +21,15 @@ function App() {
       </div>
 
       <div className="main-content">
-        <h1>Dashboard</h1>
-        <div className="user-box">
-          <p><strong>Name:</strong> aaaaaaaaaaaa</p>
-          <p><strong>User Id:</strong> aaaaaaaa</p>
-          <p><strong>College Mail:</strong> aaaa@srmist.edu.in</p>
+        <h2>Dashboard</h2>
+
+        <div className="box">
+          <p><b>Name:</b> aaaaaaaaaaaa</p>
+          <p><b>Username:</b> aaaaaaaa</p>
+          <p><b>College Mail:</b> aaaa@srmist.edu.in</p>
         </div>
 
-        <div className="request-box">
+        <div className="box">
           <h3>Request Certificate</h3>
           <input
             type="text"
